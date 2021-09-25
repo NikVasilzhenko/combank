@@ -1,0 +1,209 @@
+.main-sec{
+  background: radial-gradient(54.06% 87.36% at 76.42% 51.84%, rgba(78, 127, 255, .5) 0%, rgba(27, 24, 113, 0) 100%), #1B1871;
+  min-height: calc(100vh + 15rem);
+  border-bottom-left-radius: 8rem;
+  position: relative;
+  &::after{
+    content: '';
+    display: block;
+    width: calc(100% - 8rem);
+    height: 15rem;
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    shape-outside: polygon(0 100%, 100% 0, 100% 100%);
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+    background-color: #fff;
+  }
+  .container{
+    height: 100vh;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__dots{
+    background: url(../img/pic/dotes-1.png) right center no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 41rem;
+    height: 111.3rem;
+    transform: translateY(-22.3rem);
+  }  
+  &__wrap{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+  }
+  &__content{width: 50%;}
+  &__pic{
+    width: 50%;
+    padding-left: 5.3rem;
+    img{
+      width: 73.7rem;
+      max-width: unset;
+    }
+  }
+  &__title{
+    color: #fff;
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+    &::before{
+      content: '';
+      width: 12rem;
+      height: 4px;
+      background-color: #fff;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  &__note{
+    position: absolute;
+    bottom: 16rem;
+    left: 6rem;
+    color: #8684B9;
+  }
+  &__txt{
+    max-width: 45rem;
+    font-size: 1.8rem;
+    line-height: 140%;
+    color: #8684B9;
+    margin-bottom: 4rem;
+  }
+  @media only screen and (min-width : 768px) and (orientation: portrait){
+    min-height: unset;
+    height: 114rem;
+    .container{height: 89rem;}
+  }
+  @media only screen and (max-width : 767px){
+    min-height: unset;
+    border-bottom-left-radius: 4rem;
+    padding: 10rem 0 8rem;
+    &::after{
+      width: calc(100% - 4rem);
+      height: 4rem;
+    }
+    .container{
+      height: auto;
+      display: block;
+    }
+    &__dots{
+      width: 50%;
+      height: 100%;
+      transform: translateY(0);
+      opacity: .6;
+    }  
+    &__wrap{display: block;}
+    &__content{
+      width: 100%;
+      margin-bottom: 4rem;
+    }
+    &__pic{
+      width: 100%;
+      padding-left: 0;
+      img{width: 100%;}
+    }
+    &__title{
+      padding-bottom: 3rem;
+      margin-bottom: 3rem;
+      &::before{
+        width: 8rem;
+        height: 2px;
+      }
+    }
+    &__note{
+      position: relative;
+      bottom: 0;
+      left: 0;
+      margin-top: 3rem;
+      br{display: none;}
+    }
+    &__txt{
+      font-size: 1.4rem;
+      color: #fff;
+    }
+  }  
+}
+
+@media only screen and (min-width : 768px) and (orientation: landscape){
+  body{
+    overflow: hidden;
+    height: 100%;
+  }
+  .main-sec__note{
+    opacity: 0;
+    transition: opacity var(--duration);
+  }
+  .main-subscribe{
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity var(--duration), transform var(--duration);
+  }
+  .main-sec__pic{
+    opacity: 0;
+    transform: translateX(50vw);
+    transition: opacity var(--duration), transform var(--duration);
+  }
+  .main-sec__title{
+    transition: opacity var(--duration), transform var(--duration);
+    transform: translateY(10rem);
+    opacity: 0;
+    &::before{
+      transition: transform var(--duration);
+      transform: translateY(5rem);
+    }
+  }
+  .main-sec__txt{
+    transition: opacity var(--duration), transform var(--duration);
+    transform: translateY(10rem);
+    opacity: 0;
+  }
+  .main-sec__dots{
+    opacity: 0;
+    transition: opacity var(--duration), transform var(--duration);
+    transform: translateX(100%);
+  }
+  
+  body.step-1{ 
+    .main-sec__dots{
+      opacity: 1;
+      transform: translateX(0);
+    }
+    &.step-2{
+      &.step-3{
+        &.step-4{
+          .main-sec__note{opacity: 1;}
+          .main-sec__dots{transform: translateY(-20vh);}
+          &.step-5{
+            .main-subscribe{
+              opacity: 1;
+              transform: translateY(0);
+            }
+            .main-sec__pic{
+              opacity: 1;
+              transform: translateX(0);
+            }
+            .main-sec__title{
+              transform: translateY(0);
+              opacity: 1;
+              &::before{
+                transform: translateY(0);
+              }
+            }
+            .main-sec__txt{
+              transform: translateY(0);
+              opacity: 1;
+            }
+            overflow: visible;
+            height: auto;
+          }
+        }
+      }
+    }    
+  }
+}

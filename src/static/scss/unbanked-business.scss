@@ -1,0 +1,110 @@
+.unbanked-business{
+  padding: 12rem 0 8rem;
+  background: radial-gradient(238.29% 133.14% at 0% 1.4%, rgba(27, 97, 180, .7) 0%, rgba(27, 24, 113, 0) 100%), #1B1871;
+  &__wrap{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;    
+    margin-bottom: 5.5rem;
+  }
+  &__item{
+    min-height: 37rem;
+    width: 50%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    color: #fff;
+    &:nth-child(1){
+      justify-content: flex-start;
+      border-bottom: 2px solid #8684B9;
+      border-right: 2px solid #8684B9;
+    }
+    &:nth-child(2){
+      padding-left: 6rem;
+      border-bottom: 2px solid #8684B9;
+    }
+    &:nth-child(3){
+      padding-right: 6rem;
+      border-right: 2px solid #8684B9;
+    }
+    &:nth-child(4){
+      padding-left: 6rem;
+    }
+    p{
+      position: relative;
+      font-weight: 500;
+      font-size: 2.4rem;
+      line-height: 140%;
+      margin-bottom: 1em;
+      max-width: 52.7rem;
+      &:last-child{margin-bottom: 0;}
+    }
+  }
+  &__title{
+    padding-bottom: 4rem;
+    color: #fff;
+    &::after{
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 12rem;
+      height: .4rem;
+      background-color: #00D2EF;
+    }
+  }
+  &__icn{
+    position: relative;
+    height: 7.4rem;
+    width: 7.4rem;
+    margin-bottom: 4.7rem;
+  }
+  @media only screen and (max-width : 767px){
+    padding: 6rem 0;
+    &__wrap{
+      display: block;  
+      margin-bottom: 3rem;
+    }
+    &__item{
+      min-height: unset;
+      width: 100%;
+      padding: 4rem 0;
+      &::before{width: 100vw;}
+      &:first-child{
+        padding: 4rem 0 0;
+        border-right: none;
+        height: auto;
+        min-height: unset;
+        border-bottom: none;
+      }
+      &:nth-child(1){
+        &::before{right: -1.6rem;}
+      }
+      &:nth-child(2){padding: 4rem 0;}
+      &:nth-child(3){
+        padding: 4rem 0; 
+        border-right: none;
+        border-bottom: 2px solid #8684B9;
+      }
+      &:nth-child(4){padding: 4rem 0;}
+      p{font-size: 2rem;}
+    }
+    &__title{
+      padding-bottom: 3rem;
+      margin-bottom: 0;
+      &::after{
+        width: 18rem;
+        height: 2px;        
+      }
+    }
+    &__icn{
+      height: 6rem;
+      width: 6rem;
+      margin-bottom: 3rem;
+    }
+  }
+}

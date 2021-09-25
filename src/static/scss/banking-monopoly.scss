@@ -1,0 +1,382 @@
+.banking-monopoly{
+  text-align: center;
+  padding: 12rem 0 8rem;
+  &__title{
+    max-width: 78rem;
+    margin: 0 auto 3rem;
+    padding-top: 4.4rem;
+    &::before{
+      content: '';
+      top: 0;
+      left: 50%;
+      width: 12rem;
+      height: 4px;
+      margin-left: -6rem;
+    }
+  }
+  &__txt-grey{
+    margin-bottom: 4rem;
+    font-size: 2.4rem;
+    line-height: 150%;
+  }
+  &__txt-black{
+    font-size: 2.4rem;
+    line-height: 150%;
+    color: #000;
+    max-width: 75.3rem;
+    margin: 0 auto 11.7rem;
+  }
+  &-shem{
+    width: calc(100% + 12rem);
+    margin-left: -6rem;
+    margin-bottom: 6rem;
+    &__build{
+      width: 11rem;
+      height: 11rem;
+      background: #fff;
+      box-shadow: 0 3rem 4rem -1.2rem rgba(98, 110, 153, .25);
+      border-radius: 2.4rem;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      svg{
+        width: 5.3rem;
+        height: 5.7rem;
+      }
+    }
+    &__dollar{
+      width: 3rem;
+      height: 3rem;
+      position: absolute;
+      z-index: 2;
+    }
+    &__start{
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 8rem;
+      &-arrow{
+        width: calc(50% - .9rem);
+        height: 15rem;
+        position: relative;
+        &-arrow{
+          position: absolute;
+          top: 0;
+          width: 119.1rem;
+          height: 16.5rem;
+        }
+        .banking-monopoly-shem__build{top: -4.7rem;}
+        .banking-monopoly-shem__dollar{top: -.2rem;}
+        &.left{
+          .banking-monopoly-shem__build{right: 20.3rem;}
+          .banking-monopoly-shem__dollar{right: 10.6rem;}
+          .banking-monopoly-shem__start-arrow-arrow{right: 0;}
+        }
+        &.right{
+          .banking-monopoly-shem__build{left: 20.3rem;}
+          .banking-monopoly-shem__dollar{left: 10.6rem;}
+          .banking-monopoly-shem__start-arrow-arrow{left: 0;}
+        }
+      }
+    }
+    &__middle{
+      position: relative;
+      margin: 0 auto 7.6rem;
+      width: 78.6rem;
+      height: 40.4rem;
+      &-arrow{
+        width: 34rem;
+        height: 40.6rem;
+        position: absolute;
+        top: 0;
+        &-arrow{
+          width: 34rem;
+          height: 40.6rem;
+        }
+        .banking-monopoly-shem__dollar{top: -1.4rem;}
+        &.left{
+          left: 0;
+          .banking-monopoly-shem__dollar{left: 17.6rem;}
+        }
+        &.right{
+          right: 0;
+          .banking-monopoly-shem__dollar{right: 17.6rem;}
+        }        
+      }
+      &-icn{
+        width: 11rem;
+        height: 11rem;
+        background: radial-gradient(71.76% 71.76% at 0% 6.36%, #2AAAE1 0%, #1B1871 100%);
+        border-radius: 2.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: -5.4rem;
+        left: 50%;
+        transform: translateX(-50%);
+        svg{
+          width: 7.8rem;
+          height: 5.8rem;
+        }
+      }
+      &-company{
+        padding-top: 6.5rem;
+        margin-bottom: 6.4rem;
+        font-size: 2.4rem;
+        line-height: 150%;
+      }
+      &-txt{
+        margin: 0 auto;
+        max-width: 66rem;
+        font-size: 2.4rem;
+        line-height: 150%;
+        strong{
+          font-weight: 500;
+          color: #000;
+        }
+      }
+    }
+    &__end{
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      &-arrow{
+        width: 103.8rem;
+        height: 45rem;
+        position: relative;
+        &-arrow{
+          width: 103.8rem;
+          height: 45rem;
+        }
+        .banking-monopoly-shem__build{
+          &.top{top: -5.5rem;}
+          &.left,
+          &.right{top: 16.5rem;}
+        }
+        .banking-monopoly-shem__dollar{
+          &.left,
+          &.right{top: -1.4rem;}
+          &.bottom{bottom: 8rem;}
+        }
+        &.left{
+          .banking-monopoly-shem__build{
+            &.top{right: 16.3rem;}
+            &.left{right: -4.2rem;}
+            &.right{right: 36.8rem;}
+          }
+          .banking-monopoly-shem__dollar{
+            &.left{right: 33.3rem;}
+            &.right{right: 7.4rem;}
+            &.bottom{right: 0;}
+          }
+        }
+        &.right{
+          .banking-monopoly-shem__build{
+            &.top{left: 16.3rem;}
+            &.left{left: -4.2rem;}
+            &.right{left: 36.8rem;}
+          }
+          .banking-monopoly-shem__dollar{
+            &.left{left: 33.3rem;}
+            &.right{left: 7.4rem;}
+            &.bottom{left: 0;}
+          }
+        }
+        &:first-child{margin-right: 16rem;}
+        &:last-child{margin-left: 16rem;}
+      }
+    }
+  }
+  &__sup{
+    margin-bottom: 6rem;
+    color: #000;
+    font-size: 2.4rem;
+    line-height: 150%;
+  }
+  &__note{
+    &::before{background-color: #000;}
+  }
+  @media only screen and (max-width : 767px){
+    padding: 6rem 0 4rem;
+    &__title{
+      padding-top: 3rem;
+      &::before{
+        width: 8rem;
+        height: 2px;
+        margin-left: -4rem;
+      }
+    }
+    &__txt-grey{
+      margin-bottom: 3rem;
+      font-size: 1.6rem;
+      br{display: none;}
+    }
+    &__txt-black{
+      font-size: 1.6rem;
+      margin: 0 auto 4rem;
+    }
+    &-shem{
+      width: calc(100% + 3.2rem);
+      margin-left: -1.6rem;
+      margin-bottom: 3rem;
+      &__build{
+        width: 6rem;
+        height: 6rem;
+        box-shadow: 0 1.5rem 2rem -1.2rem rgba(98, 110, 153, .25);
+        border-radius: 1rem;
+        svg{
+          width: 3rem;
+          height: 3.1rem;
+        }
+      }
+      &__dollar{
+        width: 2rem;
+        height: 2rem;
+      }
+      &__start{
+        margin-bottom: 4rem;
+        &-arrow{
+          width: calc(50% - .9rem);
+          height: 8rem;
+          margin-bottom: 0;
+          &-arrow{
+            width: 43rem;
+            height: 7.7rem;
+          }
+          .banking-monopoly-shem__build{top: -2rem;}
+          .banking-monopoly-shem__dollar{top: 3.6rem;}
+          &.left{
+            .banking-monopoly-shem__build{right: 6rem;}
+            .banking-monopoly-shem__dollar{right: -.4rem;}
+            .banking-monopoly-shem__start-arrow-arrow{right: 0;}
+          }
+          &.right{
+            .banking-monopoly-shem__build{left: 6rem;}
+            .banking-monopoly-shem__dollar{left: -.4rem;}
+            .banking-monopoly-shem__start-arrow-arrow{left: 0;}
+          }
+        }
+      }
+      &__middle{
+        margin: 0 auto 4rem;
+        width: 30rem;
+        height: 22.4rem;
+        &-arrow{
+          width: 17rem;
+          height: 20.3rem;
+          &-arrow{
+            width: 17rem;
+            height: 20.3rem;
+          }
+          .banking-monopoly-shem__dollar{top: -.8rem;}
+          &.left{
+            left: -1.6rem;
+            .banking-monopoly-shem__dollar{left: 7.6rem;}
+          }
+          &.right{
+            right: -1.6rem;
+            .banking-monopoly-shem__dollar{right: 7.6rem;}
+          }        
+        }
+        &-icn{
+          width: 6rem;
+          height: 6rem;
+          border-radius: .8rem;
+          top: -3rem;
+          svg{
+            width: 3.9rem;
+            height: 2.9rem;
+          }
+        }
+        &-company{
+          padding-top: 4rem;
+          margin-bottom: 1rem;
+          font-size: 1.4rem;
+        }
+        &-txt{
+          max-width: 28rem;
+          font-size: 1.4rem;
+          line-height: 150%;
+        }
+      }
+      &__end{
+        &-arrow{
+          width: 18rem;
+          height: 18rem;
+          position: relative;
+          &-arrow{
+            position: absolute;
+            top: 0;
+            width: 37rem;
+            height: 18rem;
+          }
+          &:first-child{
+            margin-right: 1.6rem;
+            .banking-monopoly-shem__end-arrow-arrow{right: 0;}
+          }
+          &:last-child{
+            margin-left: 1.6rem;
+            .banking-monopoly-shem__end-arrow-arrow{left: 0;}
+          }
+          .banking-monopoly-shem__build{
+            width: 4rem;
+            height: 4rem;
+            border-radius: .6rem;
+            svg{
+              width: 2rem;
+              height: 2.1rem;
+            }
+            &.top{top: -1rem;}
+            &.left,
+            &.right{top: 6.8rem;}
+          }
+          .banking-monopoly-shem__dollar{
+            &.left,
+            &.right{top: 0rem;}
+            &.bottom{bottom: .6rem;}
+          }
+          &.left{
+            display: flex;
+            justify-content: flex-end;
+            .banking-monopoly-shem__build{
+              &.top{right: 5.6rem;}
+              &.left{right: 13rem;}
+              &.right{right: -1.5rem;}
+            }
+            .banking-monopoly-shem__dollar{
+              &.left{right: 11rem;}
+              &.right{right: 2.6rem;}
+              &.bottom{right: 3.6rem;}
+            }
+          }
+          &.right{
+            .banking-monopoly-shem__build{
+              &.top{left: 5.6rem;}
+              &.left{left: 13rem;}
+              &.right{left: -1.5rem;}
+            }
+            .banking-monopoly-shem__dollar{
+              &.left{left: 11rem;}
+              &.right{left: 2.6rem;}
+              &.bottom{left: 3.6rem;}
+            }
+          }
+          
+        }
+      }
+    }
+    &__sup{
+      margin-bottom: 6rem;
+      color: #000;
+      font-size: 2.4rem;
+      line-height: 150%;
+    }
+    &__note{
+      &::before{background-color: #000;}
+      br{display: none;}
+    }
+  }
+}

@@ -1,0 +1,297 @@
+.footer{background-color: #000;}
+.footer-top{
+  //background: radial-gradient(125.79% 249.43% at -3.44% -6.64%, rgba(74, 74, 74, .7) 0%, rgba(0, 0, 0, 0) 100%);
+  text-align: center;
+  color: #fff;
+  padding: 12rem 0;
+  position: relative;
+  &::before{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 38.2rem;
+    height: 100%;
+    background: url(../img/pic/dotes-3.png) 0 center no-repeat;
+    background-size: 32.7rem auto;
+  }
+  .container{
+    position: relative;
+    z-index: 2;
+  }
+  &__title{
+    margin: 0 auto 6rem;
+    max-width: 80rem;
+    color: #fff;
+  }
+  &__txt{
+    margin-bottom: 6rem;
+    font-size: 2.4rem;
+    line-height: 140%;
+  }
+  &__plus{
+    margin: 0 3.1rem 0 3.9rem;
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+    width: 3.6rem;
+    vertical-align: middle;
+    &::before,
+    &::after{
+      content: '';
+      display: block;
+      width: 3.6rem;
+      height: 3px;
+      background-color: #fff;
+      position: absolute;
+      bottom: 50%;
+      margin-bottom: -1px;
+      left: 0;
+    }
+    &::before{transform: rotate(90deg);}
+  }
+  &__form{
+    margin: 0 auto;
+    width: 49rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__submit{
+    width: 15.8rem;
+    height: 6rem;
+    line-height: 6rem;
+    text-align: center;
+    background: #fff;
+    border-radius: .4rem;
+    font-size: 1.8rem;
+    color: #010101;
+    &:hover{
+      background-color: #06738C;
+      color: #fff;
+    }
+  }
+  &__input{
+    @include input-reset;
+    width: calc(100% - 17rem);
+    height: 6rem;
+    padding: 0 2rem;
+    background: #333;
+    border: 1px solid #333;
+    border-radius: .4rem;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #000;
+    &:focus{background-color: #fff;}
+    &::-webkit-input-placeholder{opacity: .4; color: #fff;}
+    &::-moz-placeholder{opacity: .4; color: #fff;}
+    &:-moz-placeholder{opacity: .4; color: #fff;}
+    &:-ms-input-placeholder{opacity: .4; color: #fff;}
+    &:placeholder{opacity: .4; color: #fff;}
+    &:focus:required:valid{color: #fff;}
+    &:required:valid{color: #fff;} 
+    &::-ms-clear {  display: none; width : 0; height: 0; }
+    &::-ms-reveal {  display: none; width : 0; height: 0; }
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button,
+    &::-webkit-search-results-decoration { display: none; }
+    &:-webkit-autofill {
+      -webkit-box-shadow: inset 0 0 0 100px #fff !important;
+      -webkit-text-fill-color: #000 !important;
+      color: #000 !important;
+    }
+    &.error{border-color: #C43030;}
+  }  
+}
+.footer-middle{
+  border-top: 1px solid #575757;
+  padding: 8rem 0 6rem;
+  color: #828282;
+  text-align: center;
+  &__row{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 6.8rem;
+  }
+  &__txt{
+    margin-bottom: 7rem;
+    font-size: 1.8rem;
+    line-height: 140%; 
+  }
+  &__copyright{
+    font-size: 1.6rem;
+    line-height: 150%;
+  }
+  &__nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  &__link{
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 140%;
+    color: #fff;
+    &:hover{color: #06738C;}
+  }
+  &__contacts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__icn{
+    margin-right: 2.6rem;
+    &.twitter{
+      width: 2.4rem;
+      height: 2rem;
+    }
+    &.twitter{
+      width: 2.4rem;
+      height: 2rem;
+    }
+    &.facebook{
+      width: 1.4rem;
+      height: 2.3rem;
+    }
+    svg{
+      fill: #fff;
+      transition: fill .25s;
+    }
+    &:hover{
+      svg{
+        fill: #06738C;
+      }
+    }
+  }
+  &__logo{
+    width: 23.6rem;
+    height: 3.5rem;
+  }
+}
+.footer-bottom{
+  background-color: #333;
+  background-size: 153.2rem auto;
+  text-align: center;
+  color: #E0E0E0;
+  position: relative;
+  padding: 4rem 0;
+  &::before{
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0 ;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../img/pic/footer-dots.png) center center no-repeat;
+    background-size: 153.2rem auto;
+    opacity: .3;
+  }
+  .container{
+    position: relative;
+    z-index: 2;
+  }
+  &__title{
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+    line-height: 140%;
+    color: #E0E0E0;
+    font-weight: 500;
+  }
+  &__bar{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    max-width: 42rem;
+    margin: 0 auto 1.6rem;
+  }
+  &__btn{
+    width: calc(50% - .8rem);
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #828282;
+    border-radius: .4rem;
+    svg{
+      fill: #828282;
+      transition: fill .25s;
+    }
+    &.appstore{
+      svg{
+        width: 12.1rem;
+        height: 2.6rem;
+      }
+    }
+    &.googleplay{
+      svg{
+        width: 14rem;
+        height: 3rem;
+      }
+    }
+    &:hover{
+      border-color: #fff;
+      svg{fill: #fff;}
+    }
+  }
+}
+@media only screen and (max-width : 991px){
+  .footer-top::before{width: 24rem;}
+}
+@media only screen and (max-width : 767px){
+  .footer-top{
+    padding: 6rem 0;
+    &::before{
+      width: 50%;
+      opacity: .5;
+      background-size: 32.7rem auto;
+    }
+    &__title{margin: 0 auto 4rem;}
+    &__txt{
+      margin-bottom: 4rem;
+      font-size: 1.6rem;
+      span{display: block;}
+    }
+    &__plus{
+      margin: 2rem auto;
+      width: 3rem;
+      &::before,
+      &::after{
+        width: 3rem;
+        height: 2px;
+      }
+    }
+    &__form{
+      display: block;
+      width: 100%;
+    }
+    &__submit{
+      width: 100%;
+    }
+    &__input{
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+  .footer-middle{
+    padding: 6rem 0 4rem;
+    &__row{
+      display: block;
+      margin-bottom: 4rem;
+    }
+    &__txt{
+      margin-bottom: 4rem;
+      font-size: 1.6rem;
+    }
+    &__copyright{font-size: 1.4rem;}
+    &__nav{justify-content: center;}
+    &__link{font-size: 1.6rem;}
+    &__contacts{margin-bottom: 4rem;}
+    &__logo{margin: 0 auto 4rem;}
+  }
+  .footer-bottom{&__title{font-size: 1.8rem;}}
+}

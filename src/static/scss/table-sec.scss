@@ -1,0 +1,123 @@
+.table-sec{
+  padding: 15rem 0;
+  &__title{
+    padding-left: 17rem;
+    margin-bottom: 6rem;
+    &::before{
+      content: '';
+      background-color: #000;
+      left: 0;
+      top: 4.4rem;
+      height: 4px;
+      width: 12rem;
+    }
+  }
+  &__wrap{
+    display: flex;
+    justify-content: flex-end;
+  }
+  &-table{
+    width: 100%;
+    max-width: 101rem;
+    &__header{
+      display: inline-block;
+      padding: .6rem 3rem;
+      background: #F4F4F4;
+      border-radius: 1.2rem;
+      font-weight: 500;
+      font-size: 2.4rem;
+      line-height: 140%;
+      color: #828282;
+      white-space: nowrap;
+    }
+    td,th{
+      padding-right: 6rem;
+      text-align: center;
+    }
+    td{
+      padding-top: 4rem;
+      text-align: center;
+      &:first-child{
+        text-align: left;
+        font-size: 2.4rem;
+        color: #828282;
+      }
+    }
+    &__group{
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      font-size: 2.4rem;
+      line-height: 140%;
+      &.green{
+        color: #27AE60;
+        svg{fill: #27AE60;}
+      }
+      &.orange{
+        color: #F2994A;
+        svg{fill: #F2994A;}
+      }
+      &-icn{
+        width: 3.2rem;
+        height: 3.2rem;
+        min-width: 3.2rem;
+        margin-right: 2.4rem;
+      }
+      &-txt{
+        text-align: left;
+        width: 6.5rem;
+        min-width: 6.5rem;
+      }
+    }
+  }
+  @media only screen and (max-width : 767px){
+    padding: 6rem 0;
+    &__title{
+      padding-left: 0;
+      margin-bottom: 3rem;
+      padding-top: 3rem;
+      text-align: center;
+      &::before{
+        left: 50%;
+        top: 0;
+        height: 2px;
+        width: 8rem;
+        margin-left: -4rem;
+      }
+    }
+    &__wrap{display: block;}
+    &-table{
+      &__header{
+        padding: .4rem 1rem;
+        border-radius: .8rem;
+        font-size: 1.4rem;
+      }
+      td,th{
+        padding-right: 1rem;
+        &:last-child{padding-right: 0;}
+      }
+      td{
+        padding-top: 1.6rem;
+        &:first-child{font-size: 1.4rem;}
+      }
+      &__group{
+        display: inline-block;
+        width: auto;
+        font-size: 1.4rem;
+        &-icn{
+          width: 2.2rem;
+          height: 2.2rem;
+          min-width: 2.2rem;
+          margin: 0 auto;
+        }
+        &-txt{
+          text-align: center;
+          width: auto;
+          min-width: unset;
+        }
+      }
+    }
+  }
+}

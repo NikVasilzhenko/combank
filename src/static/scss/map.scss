@@ -1,0 +1,225 @@
+.map{
+  padding: 10rem 0 12rem;
+  background-color: #000;
+  color: #828282;
+  &__title-top{
+    margin-bottom: 9rem;
+    color: #828282;
+    a{
+      color: #fff;
+      position: relative;
+      display: inline-block;
+      &::after{
+        content: '';
+        display: block;
+        width: calc(100% - 6rem);
+        height: 1px;
+        background-color: #fff;
+        bottom: .7rem;
+        left: 0;
+        position: relative;
+        transition: background-color .25s;
+      }
+      &:hover{
+        &::after{background-color: transparent;}
+      }
+    }
+  }
+  &__title-icn{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1.2rem;
+    font-size: 0;
+    width: 3.7rem;
+    height: 3.8rem;
+  }
+  &__row{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 10.7rem;
+  }
+  &__main{
+    width: 62.6rem;
+    &-txt{
+      font-size: 1.8rem;
+      line-height: 140%;
+      color: #828282;
+      max-width: 34.4rem;
+      span{
+        color: #fff;
+        font-weight: bold;
+      }
+      &:last-of-type{
+        &::after{
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          width: 5rem;
+          height: 1px;
+          background-color: #828282;
+        }
+      }
+    }
+    &-summ{
+      font-weight: bold;
+      font-size: 8rem;
+      line-height: 140%;
+      color: #fff;
+    }
+  }
+  &__diagramm{
+    position: relative;
+    margin-top: 6rem;
+    &-pic{
+      width: 31.3rem;
+      height: 24.3rem;
+    }
+    &-txt{
+      font-size: 2.4rem;
+      line-height: 140%;
+      color: #828282;
+      position: absolute;
+      left: 27.8rem;
+      span{
+        display: block;
+        font-weight: bold;
+        color: #fff;
+      }
+      &.up{top: -.6rem;}
+      &.down{bottom: -.6rem;}
+    }
+  }
+  &__pic{
+    width: calc(100% - 62.6rem);
+    img{
+      width: 119.9rem;
+      max-width: unset;
+      margin-left: -5.5rem;
+    }
+  }
+  &__title-middle{
+    text-align: center;
+    margin: 0 auto 19rem;
+    color: #828282;
+    max-width: 97.5rem;
+    span{
+      display: block;
+      color: #fff;
+    }
+  }
+  &__we{
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    text-align: center;
+    &-hr{
+      width: 2px;
+      background: #4F4F4F;
+      margin: 0 2rem;
+      position: relative;
+      z-index: 2;
+    }
+    &-col{
+      position: relative;
+      z-index: 2;
+      padding: 2.3rem 0;
+      max-width: 33.3rem;
+      font-size: 2.4rem;
+      line-height: 140%;
+      color: #828282;
+      &:first-child{padding-left: 0;}
+      &:last-child{
+        padding-right: 0;
+        max-width: 39rem;
+      }
+    }
+    &::before{
+      content: 'We';
+      font-weight: bold;
+      font-size: 43.5rem;
+      color: #fff;
+      opacity: .15;
+      position: absolute;
+      left: -8.4rem;
+      top: -23rem;
+      font-family: 'Playfair Display';
+    }
+  }
+  @media only screen and (max-width : 767px){
+    padding: 6rem 0;
+    &__title-top{
+      margin-bottom: 4rem;
+      text-align: center;
+      a{white-space: nowrap;}
+    }
+    &__row{
+      display: block;
+      margin-bottom: 6rem;
+    }
+    &__main{
+      text-align: center;
+      width: 100%;
+      &-txt{
+        font-size: 1.6rem;
+        max-width: 30rem;
+        margin-left: auto;
+        margin-right: auto;
+        &:last-of-type{
+          &::after{width: 4rem;}
+        }
+      }
+      &-summ{font-size: 4rem;}
+    }
+    &__diagramm{
+      max-width: 30rem;
+      margin: 4rem auto 0;
+      &-pic{
+        width: 15.7rem;
+        height: 12.1rem;
+      }
+      &-txt{
+        font-size: 1.4rem;
+        left: 13rem;
+        text-align: left;
+        white-space: nowrap;
+        &.up{top: -1.6rem;}
+        &.down{bottom: -1.6rem;}
+      }
+    }
+    &__pic{
+      margin-top: 6rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      img{
+        width: 50rem;
+        max-width: unset;
+        margin-left: -2.5rem;
+      }
+    }
+    &__title-middle{margin: 0 auto 8rem;}
+    &__we{
+      position: relative;
+      display: block;
+      &-hr{
+        width: 8rem;
+        margin: 1.6rem auto;
+        height: 2px;
+      }
+      &-col{
+        padding: 0;
+        margin: 0 auto;
+        max-width: 30rem;
+        font-size: 1.4rem;
+      }
+      &::before{
+        font-size: 20rem;
+        left: 50%;
+        top: -3rem;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+.banks-are-old{
+  padding: 12rem 0 8rem;
+  background: url(../img/pic/banks-are-old-middle.jpg) center center no-repeat #051042;
+  background-size: 143.4rem auto;
+  color: #fff;
+  position: relative;
+  text-align: center;
+  &::before,
+  &::after{
+    content: '';
+    display: block;
+    background: url(../img/pic/banks-are-old-top.png) center center no-repeat;
+    background-size: contain;
+    width: 98.2rem;
+    height: 35.4rem;
+    position: absolute;    
+  }
+  &::before{
+    top: 0;
+    right: 50%;
+    margin-right: 6rem;
+  }
+  &::after{
+    bottom: 0;
+    left: 50%;
+    margin-left: 6rem;
+    transform: rotate(180deg);
+  }
+  &__title{
+    color: #fff;
+    max-width: 75.4rem;
+    margin: 0 auto 12rem;
+    padding-top: 5.4rem;
+    &::before{
+      content: '';
+      top: 0;
+      left: 50%;
+      width: 12rem;
+      height: 4px;
+      margin-left: -6rem;
+      background-color:#00D2EF;
+    }
+  }
+  &__list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 12.5rem;
+    margin: 0 auto 31rem;
+    max-width: 110rem;
+  }
+  &__item{
+    text-align: center;
+    font-size: 2.4rem;
+    line-height: 140%;    
+  }
+  &__icn{
+      width: 10rem;
+      height: 10rem;
+      margin: 0 auto 2rem;
+  }
+  &__note{
+    &::before{background-color: #00D2EF;}
+  }
+  @media only screen and (max-width : 767px){
+    padding: 8rem 0 6rem;
+    background-size: cover;
+    &::before,
+    &::after{
+      width: 30rem;
+      height: 12rem; 
+    }
+    &::before{
+      right: auto;
+      left: -9rem;
+      margin-right: 0;
+    }
+    &::after{
+      left: auto;
+      right: -9rem;
+      margin-left: 0;
+    }
+    &__title{
+      padding-top: 3rem;
+      margin-bottom: 6rem;
+      &::before{
+        width: 8rem;
+        height: 2px;
+        margin-left: -4rem;
+      }
+    }
+    &__list{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 4rem;
+      margin: 0 auto 8rem;
+    }
+    &__item{font-size: 1.4rem;}
+    &__icn{
+        width: 6rem;
+        height: 6rem;
+        margin: 0 auto 1.6rem;
+    }
+  }
+}

@@ -1,0 +1,382 @@
+.how-it-works{  
+  &__blue-sec{
+    background: radial-gradient(238.29% 133.14% at 0% 1.4%, rgba(27, 97, 180, .7) 0%, rgba(27, 24, 113, 0) 100%), #1B1871;    
+    position: relative;
+    padding: 12rem 0 23rem;
+    &::before{
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: url(../img/pic/dotes-2.png) center center no-repeat;
+      background-size: 144rem auto;
+      opacity: .5;
+    }
+    .container{
+      position: relative;
+      z-index: 2;
+    }
+  }
+  &__title{
+    color: #fff;
+    text-align: center;
+    max-width: 62rem;
+    margin: 0 auto 4rem;
+    padding-top: 4.4rem;
+    &::before{
+      content: '';
+      top: 0;
+      left: 50%;
+      background-color: #fff;
+      width: 15rem;
+      height: 4px;
+      transform: translateX(-50%);
+    }
+  }
+  &__top-txt{
+    max-width: 65rem;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    line-height: 150%;
+    text-align: center;
+    color: #8684B9;
+  }
+  &__banners{
+    width: 96.8rem;
+    margin: 8rem auto 15rem;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    position: relative;
+    &::before,
+    &::after{
+      content: '';
+      width: 41rem;
+      height: 56.5rem;
+      position: absolute;
+      display: block;
+      top: 0;
+      border-radius: 3rem;
+      transform: skewX(-15deg);
+      background: radial-gradient(248.91% 203.42% at 72.31% -29.1%, #1B61B4 0%, rgba(27, 24, 113, 0) 100%);
+      opacity: .3;
+    }
+    &::before{
+      right: 100%;
+      margin-right: -4.5rem;
+    }
+    &::after{
+      left: 100%;
+      margin-left: -4.5rem;
+    }
+  }
+  &__banner{
+    width: 41rem;
+    height: 56.5rem;
+    position: relative;
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    &::before{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 3rem;
+      transform: skewX(-15deg);
+    }
+    &_orange{
+      &::before{
+        background: radial-gradient(104.75% 109.05% at 98.35% 0%, #F2C34A 0%, rgba(242, 153, 74, 0) 100%), #F2994A;
+      }
+    }
+    &_green{
+      &::before{
+        background: radial-gradient(75.46% 75.46% at 97.59% 2.55%, #00EF65 0%, rgba(39, 174, 96, 0) 100%), #27AE60;
+      }
+    }
+    &-wrap{
+      position: relative;
+      z-index: 2;
+      color: #fff;
+      font-weight: bold;
+      font-size: 4rem;
+      line-height: 140%;
+      padding-left: 6rem;
+    }    
+  }
+  &__quote{
+    width: 3.8rem;
+    height: 3rem;
+    margin: 3rem 0;
+  }
+  &__list{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+  }
+  &__item{
+    width: calc((100% - 4rem) / 3);
+    background: #1B1871;
+    border-radius: 3rem;
+    padding: 5.8rem 3rem 6rem 4rem;
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 150%;
+    &-icn{
+      width: 7rem;
+      height: 7rem;
+      margin: 0 0 3rem -.8rem;
+    }
+  }
+  &__txt{
+    max-width: 100%;
+    width: 101.2rem;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.4rem;
+    line-height: 150%;
+    color: #8684B9;
+    strong{
+      color: #fff;
+      font-weight: 500;
+    }
+  }
+  &__white-sec{
+    position: relative;
+    background-color: #F9F9FF;
+    z-index: 3;
+    padding: 6.5rem 0 5.6rem;
+  }
+  &__white-title{
+    text-align: center;
+    margin-bottom: 10rem;
+  }
+  &__top-horn{
+    width: 100%;
+    height: 15.2rem;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    margin-bottom: -1px;
+  }
+  &__bottom-horn{
+    width: 100%;
+    height: 15.2rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: -1px;
+  }
+  &__note{
+    &::before{background-color: #000;}
+  }
+  &__bot-list{
+    max-width: 100%;
+    width: 108.6rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &__bot-item{
+    width: 48%;
+    max-width: 47.2rem;
+    &-icn{
+      width: 8.5rem;
+      height: 8.5rem;
+      margin-bottom: 4rem;
+    }    
+    font-size: 2.4rem;
+    line-height: 140%;
+    color: #8684B9;
+    strong{
+      color: #1B1871;
+      font-weight: bold;
+    }
+  }
+  &__shem{
+    position: relative;
+    width: 100%;
+    max-width: 108.7rem;
+    margin: 8rem auto 11rem;
+    border: 2px solid #1B1871;
+    border-radius: 3rem;
+    padding: 7.8rem 0 9.3rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    &-col{
+      text-align: center;
+      .face{
+        width: 6rem;
+        height: 6rem;
+        margin: 0 auto 2rem;
+      }
+    }
+    &-mark{
+      margin: 0 auto;
+      color: #fff;
+      font-weight: 500;
+      font-size: 1.8rem;
+      width: 12.7rem;
+      text-align: center;
+      border-radius: .8rem;
+      height: 3.5rem;
+      line-height: 3.5rem;
+      &.orange{background-color: #F2994A;}
+      &.green{background-color: #27AE60;}
+    }
+    &-bar{
+      background-color: #F9F9FF;
+      position: absolute;
+      bottom: -3rem;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 0 3rem;
+    }
+    &-btn{
+      padding: 0 5rem;
+      border: 2px solid #1B1871;
+      border-radius: .8rem;
+      height: 6rem;
+      line-height: calc(6rem - 4px);
+      text-align: center;
+      font-weight: 500;
+      font-size: 1.8rem;
+      letter-spacing: .02em;
+      color: #1B1871;
+      &:hover{
+        background-color: #1B1871;
+        color: #fff;
+      }
+    }
+  }
+  @media only screen and (max-width : 991px){
+    .how-it-works__top-horn{height: 13.2rem;}
+    .how-it-works__bottom-horn{height: 13.2rem;}
+  }
+  @media only screen and (max-width : 767px){
+    &__blue-sec{
+      padding: 6rem 0 8rem;
+      &::before{background-size: 80rem auto;}
+    }
+    &__title{
+      margin: 0 auto 3rem;
+      padding-top: 3rem;
+      &::before{
+        width: 8rem;
+        height: 2px;
+      }
+    }
+    &__top-txt{font-size: 1.4rem;}
+    &__banners{
+      width: 100%;
+      margin: 4rem auto;
+      display: flex;
+      &::before,
+      &::after{
+        width: 45%;
+        height: 20rem;
+        border-radius: 1rem;
+      }
+      &::before{margin-right: 0;}
+      &::after{margin-left: 0;}
+    }
+    &__banner{
+      width: 45%;
+      height: 20rem;
+      margin: 0 .5rem;
+      &::before{border-radius: 1rem;}
+      &-wrap{
+        font-size: 1.4rem;
+        padding-left: 3rem;
+      }    
+    }
+    &__quote{
+      width: 1.9rem;
+      height: 1.5rem;
+      margin: 1.6rem 0;
+    }
+    &__list{
+      display: block;
+      margin-bottom: 3rem;
+    }
+    &__item{
+      width: 100%;
+      border-radius: 1rem;
+      padding: 3rem 2rem;
+      font-size: 1.6rem;
+      margin-bottom: 1.6rem;
+      &-icn{margin: 0 0 2rem 0;}
+    }
+    &__txt{font-size: 1.6rem;}
+    &__white-sec{
+      padding: 6rem 0;
+      shape-outside: polygon(0 3rem, 50% 0, 100% 3rem, 100% 100%, 0 100%);
+      clip-path: polygon(0 3rem, 50% 0, 100% 3rem, 100% 100%, 0 100%);
+      margin-top: -3.1rem;
+    }
+    &__top-horn,
+    &__bottom-horn{display: none;}
+    &__note{
+      br{display: none;}
+    }
+    &__bot-list{
+      width: 100%;
+      display: block;
+    }
+    &__bot-item{
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 5rem;
+      &:last-child{margin-bottom: 0;}
+      &-icn{
+        width: 6rem;
+        height: 6rem;
+        margin-bottom: 2rem;
+      }    
+      font-size: 1.6rem;
+    }
+    &__white-title{margin-bottom: 4rem;}
+    &__shem{
+      margin: 4rem auto 6rem;
+      border-radius: 1rem;
+      padding: 4rem 0;
+      &-col{
+        .face{
+          width: 4rem;
+          height: 4rem;
+          margin: 0 auto 1rem;
+        }
+      }
+      &-mark{
+        font-size: 1.4rem;
+        width: 9rem;
+        border-radius: .4rem;
+        height: 3rem;
+        line-height: 3rem;
+      }
+      &-bar{
+        bottom: -2.3rem;
+        padding: 0 1.6rem;
+      }
+      &-btn{
+        padding: 0 2rem;
+        border-radius: .4rem;
+        height: 4.6rem;
+        line-height: calc(4.6rem - 4px);
+        font-size: 1.6rem;
+        letter-spacing: 0;
+      }
+    }
+  }
+}

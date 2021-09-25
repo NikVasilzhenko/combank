@@ -1,0 +1,44 @@
+.big-quote{
+  padding: 12rem 0 15rem;
+  &__wrap{
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__q{
+    display: block;
+    margin: 0;
+    padding: 5.5rem 0 0 13rem;
+    position: relative;
+    max-width: 97rem;
+    &::before,&::after{display: none;}
+  }
+  &__icn{
+    width: 20.4rem;
+    height: 14rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__txt{
+    position: relative;
+    font-family: 'Playfair Display';
+    z-index: 2;
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 140%;
+    color: #828282;
+    span{color: #000;}
+  }
+  @media only screen and (max-width : 767px){
+    padding: 6rem 0;
+    &__q{padding: 0;}
+    &__wrap{display: block;}
+    &__icn{
+      width: 10.2rem;
+      height: 7rem;
+      top: -2rem;
+    }
+    &__txt{font-size: 3.2rem;}
+    
+  }
+}

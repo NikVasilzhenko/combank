@@ -1,0 +1,47 @@
+:root{
+  --duration: .7s;
+}
+@import "vendors.scss";
+
+//шрифты
+@import "fonts.scss";
+
+//переменный и миксины
+@import "_vars.scss";
+@import "_mix.scss";
+
+//базовые глобальные стили
+@import "basic.scss";
+
+//страницы
+
+//глобальные модули
+@import "intro.scss";
+
+//модули
+
+@import "header.scss";
+@import "main-sec.scss";
+@import "footer.scss";
+@import "cloud.scss";
+@import "settlement.scss";
+@import "banks-are-old.scss";
+@import "big-thing.scss";
+@import "main-subscribe.scss";
+@import "what-if.scss";
+@import "unbanked-business.scss";
+@import "global-scale.scss";
+@import "well-2.scss";
+@import "big-quote.scss";
+@import "docs.scss";
+@import "sample-clause.scss";
+@import "all-aboard.scss";
+@import "map.scss";
+@import "banking-monopoly.scss";
+@import "structure.scss";
+@import "how-it-works.scss";
+@import "driver.scss";
+@import "slider-sec.scss";
+@import "table-sec.scss";
+@import "progress.scss";
+@import "popup.scss";

@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/subset-PlayfairDisplay-Bold.eot');
+  src: url('../fonts/subset-PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/subset-PlayfairDisplay-Bold.woff2') format('woff2'),
+       url('../fonts/subset-PlayfairDisplay-Bold.woff') format('woff'),
+       url('../fonts/subset-PlayfairDisplay-Bold.ttf') format('truetype'),
+       url('../fonts/subset-PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('../fonts/SFProDisplay-Medium.eot');
+  src: local('SF Pro Display Medium'), local('SFProDisplay-Medium'),
+      url('../fonts/SFProDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/SFProDisplay-Medium.woff2') format('woff2'),
+      url('../fonts/SFProDisplay-Medium.woff') format('woff'),
+      url('../fonts/SFProDisplay-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('../fonts/SFProDisplay-Bold.eot');
+  src: local('SF Pro Display Bold'), local('SFProDisplay-Bold'),
+      url('../fonts/SFProDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/SFProDisplay-Bold.woff2') format('woff2'),
+      url('../fonts/SFProDisplay-Bold.woff') format('woff'),
+      url('../fonts/SFProDisplay-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('../fonts/SFProDisplay-Black.eot');
+  src: local('SF Pro Display Black'), local('SFProDisplay-Black'),
+      url('../fonts/SFProDisplay-Black.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/SFProDisplay-Black.woff2') format('woff2'),
+      url('../fonts/SFProDisplay-Black.woff') format('woff'),
+      url('../fonts/SFProDisplay-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+

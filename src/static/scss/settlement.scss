@@ -1,0 +1,219 @@
+.settlement{
+  padding: 20rem 0;
+  background-color: #F9F9FF;
+  shape-outside: polygon(0 12rem, 100% 0, 100% calc(100% - 12rem), 0 100%);
+  clip-path: polygon(0 12rem, 100% 0, 100% calc(100% - 12rem), 0 100%);
+  &__title{
+    padding-left: 17rem;
+    margin-bottom: 8rem;
+    max-width: 97.8rem;
+    &::before{
+      content: '';
+      width: 12rem;
+      height: 4px;
+      left: 0;
+      top: 4.2rem;
+    }
+  }
+  &__row,
+  &__subtitles{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &__col{
+    width: 50%;
+    padding-left: 17rem;
+    &:last-child{padding-left: 12rem;}
+  }
+  &__subtitle{
+    position: relative;
+    padding-bottom: 2.8rem;
+    color: #8684B9;
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 150%;
+    &::after{
+      content: '';
+      display: block;
+      width: 8rem;
+      height: 4px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: #8684B9;
+    }
+  }
+  &__row{
+    align-items: stretch;
+    margin-bottom: 6.6rem;
+  }
+  &__noarrow,
+  &__arrow{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 17rem;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 150%;
+    padding-right: 8rem;
+    min-height: 38rem;
+  }
+  &__arrow{
+    position: relative;
+    color: #000;
+    &::before{
+      content: '';
+      display: block;
+      background: url(../img/svg/arrow-bg.svg) center center no-repeat;
+      background-size: contain;
+      filter: drop-shadow(4rem 8rem 10rem rgba(27, 24, 113, .05));
+      width: 85.8rem;
+      height: 38rem;
+      position: absolute;
+      top: 0;
+      right: -8rem;
+    }
+  }
+  &__numb{
+    font-weight: bold;
+    font-size: 25rem;
+    line-height: 150%;
+    color: #8684B9;
+    opacity: .1;
+    position: absolute;
+    left: -11.2rem;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__txt{
+    position: relative;
+    z-index: 3;
+    b{
+      font-weight: 500;
+      color: #000;
+    }
+  }
+  &__noarrow{padding-left: 12rem;}
+  &__footer{
+    text-align: center;
+    margin: 8.4rem auto 0;
+    padding-top: 8rem;
+    position: relative;
+    max-width: 67.4rem;
+    font-size: 2.4rem;
+    line-height: 150%;
+    b{
+      font-weight: 500;
+      color: #000;
+      display: block;
+    }
+    span{
+      position: relative;
+      display: inline-block;
+      &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        background-color: #000;
+        height: 3px;
+        margin-top: 1px;
+      }
+    }
+    &::before{
+      content: '';
+      display: block;
+      width: 21rem;
+      height: 2px;
+      background-color: #8684B9;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  @media only screen and (max-width : 767px){
+    padding: 10rem 0;
+    shape-outside: polygon(0 6rem, 100% 0, 100% calc(100% - 6rem), 0 100%);
+    clip-path: polygon(0 6rem, 100% 0, 100% calc(100% - 6rem), 0 100%);
+    &__title{
+      padding-top: 3rem;
+      padding-left: 0;
+      text-align: center;
+      margin-bottom: 3rem;
+      &::before{
+        height: 2px;
+        width: 8rem;
+        margin-left: -4rem;
+        width: 8rem;
+        top: 0;
+        left: 50%;
+        margin-left: -4rem;
+      }
+    }
+    &__col{
+      width: calc(50% - .8rem);
+      padding-left: 0;
+      &:last-child{padding-left: 0;}
+      &:first-child{
+        .settlement__subtitle{
+          text-align: right;
+          &::after{
+            left: auto;
+            right: 0;
+          }
+        }
+      }
+    }
+    &__subtitle{
+      padding-bottom: 1.4rem;
+      font-size: 2.4rem;
+      margin-bottom: 2rem;
+      &::after{
+        width: 6rem;
+        height: 2px;
+      }
+    }
+    &__row{
+      align-items: stretch;
+      margin-bottom: 0;
+    }
+    &__noarrow,
+    &__arrow{
+      width: calc(50% - .8rem);
+      padding: 1.6rem 0;
+      font-size: 1.4rem;
+      padding-right: 0;
+      min-height: unset;
+      display: block;
+      
+    }
+    &__arrow{
+      text-align: right;
+      &::before{display: none;}
+    }
+    &__numb{
+      font-size: 4rem;
+      left: 0;
+      top: -1rem;
+      transform: none;
+    }
+    &__noarrow{padding-left: 0;}
+    &__footer{
+      margin: 4rem auto 0;
+      padding-top: 4rem;
+      font-size: 1.6rem;
+      span{
+        &::after{height: 2px;}
+      }
+      &::before{width: 12rem;}
+    }
+  }
+  
+}
